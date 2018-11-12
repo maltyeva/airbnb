@@ -1,4 +1,4 @@
 <% @flats.each do |flat| %>
   <p><%= flat["name"]%> <%= flat["price"] %> <%= flat["priceCurrency"] %></p>
-  <p> <%= link_to "See more", show_path(flat["id"]) %> </p>
+  <p> <%= link_to flat["name"], show_path(flat["id"]) %> </p>
 <% end %> 
